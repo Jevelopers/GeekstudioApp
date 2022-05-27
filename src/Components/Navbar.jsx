@@ -4,7 +4,8 @@ import { Button, CssBaseline, Grid, Typography } from '@mui/material'
 import { Box, Container } from '@mui/system'
 // @mui material ->Iconos
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
-import SchoolIcon from '@mui/icons-material/School';
+import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
+import SportsGymnasticsIcon from '@mui/icons-material/SportsGymnastics';
 import React from 'react'
 
 
@@ -37,9 +38,11 @@ function Navbar() {
                     </Grid>
                     <Container component='header__content' sx={{ my: { xs: 3, lg: 15 }, textAlign: 'center' }}>
                         <Typography variant='h1' fontWeight='bold' color='primary'>APTITUD ENERGYM</Typography>
-                        <Typography variant='h5' color='white'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas corporis quia ipsa magnam similique, dolorem officiis tempore odit sapiente tempora iste rem, ipsam deleniti porro mollitia earum autem pariatur aspernatur.</Typography>
-                        <Button variant="outlined" startIcon={<SchoolIcon />}
-                            sx={{ my: 5 }}>QUIERO SEGUIR APRENDIENDO </Button>
+                        <Typography variant='h5' color='white'>El ejercicio te ayuda a mejorar tu salud física y mental y a contar con un sistema inmune fuerte. Llena tu vida de energía y motivación. Supera tus límites con programas de entrenamiento diseñados por profesionales de la salud, de acuerdo con tus objetivos.</Typography>
+                        <Button variant="contained" size="large" startIcon={<FitnessCenterIcon />}
+                            sx={{ my: 5, mx: 2 }}>¡AFILIATE YA!</Button>
+                        <Button variant="outlined" size="large" startIcon={<SportsGymnasticsIcon />}
+                            sx={{ my: 5 }}>VER PLANES</Button> 
                     </Container>
                 </Container>
             </Box>
